@@ -2,8 +2,10 @@
 // Registrando styles para serem enfileirados
 function btw_adding_styles() {
 wp_register_style('Bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+wp_register_style('menu_theme', get_template_directory_uri().'/menu.css');
 
 wp_enqueue_style('Bootstrap');
+wp_enqueue_style('menu_theme');
 }
 add_action( 'wp_enqueue_scripts', 'btw_adding_styles' );
 

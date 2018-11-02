@@ -1,20 +1,16 @@
 /* Container do menu */
 .main-menu {
-	float: right;
+	background: #DDDDEE;
+	border-radius: 15px;
 	height: 45px;
-	padding: 15px 5px;
-	/*! border: double 2px #000; */
+	padding: 5px;
 }
 .main-menu a {
-	background-image: url('./imagens/textura1.png');
-	border: double 1px #CCCCCC;
-	border-radius: 15px;
 	color: #000000;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 12px;
 	letter-spacing: 0.02em;
-	margin: 2px;
 }
 .main-menu a:hover {
 	background: #4f9ee3;
@@ -23,7 +19,8 @@
  
 /* Container dos links do menu - Espaço de 30px para acompanhar o layout */
 .main-menu > ul {
-	/* margin: 0 15px;*/
+	margin: 0 15px;
+	list-style-type: none;
 }
  
 /* Mantém os sub-menus nas posições corretas */
@@ -64,21 +61,18 @@
  
 .menu-item-has-children .sub-menu {
 	position: absolute;
-	/*background: #DDDDEE;*/
-	background-image: url('./imagens/textura1.png');
+	background: #ddd;
 	min-width: 200px;
 	display: none;
 	z-index: 9999;
 }
-.menu-item-has-children .sub-menu  li {}
+.menu-item-has-children .sub-menu  li {
+	border-bottom: 2px solid #ccc;
+}
 .menu-item-has-children .sub-menu  a {
 	display: block;
 	padding: 10px;
-	color: #000000;
-}
-.menu-item-has-children .sub-menu a:hover{
-	background: #4f9ee3;
-	color:aquamarine;
+	color: #555;
 }
  
 /* Sub-menus dentro de sub-menus sempre aparecem ao lado direito */
@@ -94,14 +88,5 @@
 	display: block;
 }
 .menu-item-has-children:hover >.sub-menu a:hover {
-	background: #4f9ee3;
-	color:aquamarine;
-}
-@media screen and (min-width: 1360px){
-    .main-menu {
-        padding: 0px;
-    }
-    .main-menu > ul {
-        margin: 0 15px;
-    }
+	background: #eee;
 }
