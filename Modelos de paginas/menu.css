@@ -1,0 +1,92 @@
+/* Container do menu */
+.main-menu {
+	background: #DDDDEE;
+	border-radius: 15px;
+	height: 45px;
+	padding: 5px;
+}
+.main-menu a {
+	color: #000000;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 12px;
+	letter-spacing: 0.02em;
+}
+.main-menu a:hover {
+	background: #4f9ee3;
+	color:aquamarine;
+}
+ 
+/* Container dos links do menu - Espaço de 30px para acompanhar o layout */
+.main-menu > ul {
+	margin: 0 15px;
+	list-style-type: none;
+}
+ 
+/* Mantém os sub-menus nas posições corretas */
+.main-menu li {
+	position: relative;
+}
+ 
+.main-menu > ul > li {
+	float: left;
+}
+.main-menu > ul > li > a {
+	display: block;
+	padding: 10px;
+}
+.main-menu > ul > .menu-item-has-children > a {
+	padding: 10px 30px 10px 10px;
+}
+ 
+/* Adiciona uma seta para baixo nos itens que tem sub-menu */
+.main-menu > ul > .menu-item-has-children > a:after{
+	display: block;
+	content: ' ';
+	border: 5px solid transparent; 
+	border-top-color: #fff;
+	right: 10px;
+	top: 50%;
+	margin-top: -2px;
+	height: 5px;
+	width: 5px;
+	position: absolute;
+	z-index: 9998;
+}
+ 
+/* Mantém os sub-menus mais abaixo nas posições corretas */
+.menu-item-has-children  {
+	position: relative;
+}
+ 
+.menu-item-has-children .sub-menu {
+	position: absolute;
+	background: #ddd;
+	min-width: 200px;
+	display: none;
+	z-index: 9999;
+}
+.menu-item-has-children .sub-menu  li {
+	border-bottom: 2px solid #ccc;
+}
+.menu-item-has-children .sub-menu  a {
+	display: block;
+	padding: 10px;
+	color: #555;
+}
+ 
+/* Sub-menus dentro de sub-menus sempre aparecem ao lado direito */
+.sub-menu .sub-menu {
+	position: absolute;
+	min-width: 200px;
+	left: 100%;
+	top: -0;
+}
+ 
+/* Não precisamos de javascript para mostra os sub-menus */
+.menu-item-has-children:hover >.sub-menu {
+	display: block;
+}
+.menu-item-has-children:hover >.sub-menu a:hover {
+	background: #eee;
+}
