@@ -1,0 +1,56 @@
+/*
+Theme Name: Construindo um tema
+Theme URI: https://construindoumtema.wordpress.com
+Author: Marcelo Luiz Lubasinski <admin@portalgestaodigital.com>
+Author URI: http://www.portalgestaodigital.com
+Description: Este tema foi criado como exemplo do blog Themes WordPress
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:
+Text Domain: 
+ 
+*/
+.container{
+	border: 1px solid #000000;
+	border-radius: 15px;
+	margin-top: 20px;
+	padding: 10px;
+	width: 90%;
+	}
+.header{
+	border: 1px solid #000000;
+	border-radius: 15px;
+	margin: 5px;
+	}
+.header h1{
+	text-align: center;
+	}
+.header h2{
+	text-align: center;
+	}
+.menu{
+	border: 1px solid #000000;
+	border-radius: 15px;
+	margin: 5px;
+	padding: 10px;
+	}
+.content{
+	border: 1px solid #000000;
+	border-radius: 15px;
+	margin: 5px;
+	padding: 10px;
+	}
+.sidebar{
+	border: 1px solid #000000;
+	border-radius: 15px;
+	margin: 5px;
+	padding: 10px;
+	}
+.footer{
+	border: 1px solid #000000;
+	border-radius: 15px;
+	clear: both;
+	margin: 5px;
+	text-align: center;
+	}
